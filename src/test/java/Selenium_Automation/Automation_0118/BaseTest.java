@@ -44,6 +44,7 @@ public class BaseTest
 		System.out.println(driver.getTitle());
 		System.out.println(industryAct);
 		Assert.assertTrue(industryAct.contains(TestData.industry),"The industry page is not opened correctly");
+	System.out.println("hello");
 	}
 	@AfterClass
 	public void closeBrowser()
