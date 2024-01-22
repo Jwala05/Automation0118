@@ -30,10 +30,3 @@ jobs:
             cache: maven
       -  name: Build with Maven
          run: mvn -B package --file pom.xml
-suites:
--  name: Suite
-   tests:
-   -  name: Test
-      thread-count: 5
-      classes:
-      -  name: Selenium_Automation.Automation_0118.BaseTest
