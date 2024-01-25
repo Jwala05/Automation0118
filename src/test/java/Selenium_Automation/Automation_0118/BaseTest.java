@@ -3,6 +3,7 @@ package Selenium_Automation.Automation_0118;
 
 import org.openqa.selenium.WebDriver;
 import org.openqa.selenium.chrome.ChromeDriver;
+import org.openqa.selenium.chrome.ChromeOptions;
 import org.testng.Assert;
 import org.testng.annotations.AfterClass;
 import org.testng.annotations.BeforeClass;
@@ -19,6 +20,10 @@ public class BaseTest
 	public void setUp()
 	{
 		driver = new ChromeDriver();
+		/*ChromeOptions options = new ChromeOptions();
+		options.addArguments("--no-sandbox");
+		options.addArguments("--disable-dev-shm-usage");
+		options.addArguments("--headless");*/
 		commonMethods = new CommonMethods(driver);
 		contactUsPage = new ContactusPage(driver, commonMethods);
 		industryPage = new IndustryPage(driver,commonMethods);

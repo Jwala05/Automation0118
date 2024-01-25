@@ -38,5 +38,9 @@ public class CommonMethods
 	{
 		return driver.getTitle();
 	}
+	public void handleCookies()
+	{
+		
+	}
 	
 }
