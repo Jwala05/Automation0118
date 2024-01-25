@@ -1,4 +1,4 @@
-package Selenium_Automation.Automation_0118;
+package Selenium0125;
 
 import java.time.Duration;
 
@@ -40,7 +40,14 @@ public class CommonMethods
 	}
 	public void handleCookies()
 	{
-		
+		if(driver.findElement(By.className("cmplz-buttons")).isDisplayed())
+		{
+			driver.findElement(By.className("cmplz-accept")).click();
+		}
+		else
+		{
+			System.out.println("No cookie dialog");
+		}
 	}
 	
 }

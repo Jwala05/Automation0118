@@ -1,4 +1,5 @@
-package Selenium_Automation.Automation_0118;
+package Selenium0125;
+
 public class TestData 
 {
 	public static String url = "https://www.triconinfotech.com/";

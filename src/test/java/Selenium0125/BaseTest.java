@@ -1,5 +1,4 @@
-package Selenium_Automation.Automation_0118;
-
+package Selenium0125;
 
 import org.openqa.selenium.WebDriver;
 import org.openqa.selenium.chrome.ChromeDriver;
@@ -20,14 +19,15 @@ public class BaseTest
 	public void setUp()
 	{
 		driver = new ChromeDriver();
-		/*ChromeOptions options = new ChromeOptions();
+		ChromeOptions options = new ChromeOptions();
 		options.addArguments("--no-sandbox");
 		options.addArguments("--disable-dev-shm-usage");
-		options.addArguments("--headless");*/
+		options.addArguments("--headless");
 		commonMethods = new CommonMethods(driver);
 		contactUsPage = new ContactusPage(driver, commonMethods);
 		industryPage = new IndustryPage(driver,commonMethods);
 		commonMethods.navigateUrl(TestData.url);
+		commonMethods.handleCookies();
 	}
 	
 	@Test
